@@ -1,0 +1,14 @@
+name: Hello World
+description: 'Greet someone and record the time'
+inputs: # Parametros de entrada de la action
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+output: # Valores de salida, post procesado.
+  time:
+    description: 'The time we greeted you'
+runs:
+  using: 'node18'
+  main: 'index.js'
+
